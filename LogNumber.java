@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * The HelloWorld program implements an application that
  * simply displays log number question to the standard output.
@@ -6,8 +8,6 @@
  * @version 1.0
  * @since   2022-10-23
  */
-
-import java.util.Scanner;
 
 class LogNumber {
   public static void main(String[] args) {
