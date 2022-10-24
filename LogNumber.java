@@ -15,9 +15,11 @@ class LogNumber {
     int carWeight = 1100;
     int weightMetre = 20;
     String logLength = "";
-    Scanner myObj = new Scanner(System.in); 
-    System.out.println("There are three types of log length, 0.25m, 0.5m and 1m.");
-    System.out.print("Which type of length do you want to choose?(Enter number): ");
+    Scanner myObj = new Scanner(System.in);
+    System.out.println("There are three types of log length, 0.25m, 0.5m"
+                    + " and 1m.");
+    System.out.print("Which type of length do you want to choose?(Enter "
+                    + "number): ");
     logLength = myObj.next() + myObj.nextLine();
 
     if (logLength.equals("0.25")) {
@@ -30,8 +32,10 @@ class LogNumber {
       System.out.println("\nPlease choose a type!");
     }
 
-    if (logLength.equals("0.25") || logLength.equals("0.5") || logLength.equals("1")) {
-      System.out.println("\n" + logNumber + " logs need to be placed on the truck.");
+    if (logLength.equals("0.25") || logLength.equals("0.5")
+                    || logLength.equals("1")) {
+      System.out.println("\n" + logNumber + " logs need to be placed on "
+                      + "the truck.");
     } else {
       System.out.println("\nPlease choose a type in options!");
     }
