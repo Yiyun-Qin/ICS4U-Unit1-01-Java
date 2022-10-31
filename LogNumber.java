@@ -14,6 +14,9 @@ class LogNumber {
     double logNumber = -1;
     int carWeight = 1100;
     int weightMetre = 20;
+    double option1 = 0.25;
+    double option2 = 0.5;
+    int option3 = 1;
     String logLength = "";
     Scanner myObj = new Scanner(System.in);
     System.out.println("There are three types of log length, 0.25m, 0.5m"
@@ -23,11 +26,11 @@ class LogNumber {
     logLength = myObj.next() + myObj.nextLine();
 
     if (logLength.equals("0.25")) {
-      logNumber = carWeight / weightMetre / 0.25;
+      logNumber = carWeight / weightMetre / option1;
     } else if (logLength.equals("0.5")) {
-      logNumber = carWeight / weightMetre / 0.5;
+      logNumber = carWeight / weightMetre / option2;
     } else if (logLength.equals("1")) {
-      logNumber = carWeight / weightMetre / 1;
+      logNumber = carWeight / weightMetre / option3;
     } else {
       System.out.println("\nPlease choose a type!");
     }
